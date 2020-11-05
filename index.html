@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+    <title>Logic Go</title>
+</head>
+<body>
+    <section style="background-color: var(--nord5); height: 500px;">
+        <div style="padding: 10px;">
+            <h2>Hello, I am</h2>
+            <h1 id="logicgo">Logic Go</h1>
+            <h2>Sasha in real life</h2>
+            <p>I work on fun programming projects, play the piano, and listen to jazz.</p>
+        </div>
+    </section>
+    </br>
+    <section style="background-color: var(--nord0); height: 500px;">
+        <div style="padding: 10px;">
+            <h1 style="color: var(--nord4);">Github</h1>
+            <div>
+                <img style="display: inline-block;" src="/artwork/GitHub-Mark-Light-120px-plus.png">
+                <h2 style="display: inline-block; color: var(--nord9);">A collection of my programming projects</h2>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    //random name color on load
+    var random = Math.floor(Math.random() * 6) + 10;
+    var color = `var(--nord${random})`;
+    document.getElementById("logicgo").style.color = color;
+</script>
