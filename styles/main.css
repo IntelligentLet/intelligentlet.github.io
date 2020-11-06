@@ -2,7 +2,6 @@
     font-family: comfortaa;
     src: url(/artwork/comfortaa/Comfortaa-Regular.ttf);
 }
-@import "styles/nordtheme.css";
 
 :root {
   --nord0: rgb(46,52,64);
