@@ -1,6 +1,6 @@
 @font-face {
     font-family: comfortaa;
-    src: url(artwork/comfortaa/Comfortaa-Regular.ttf) format('truetype');
+    src: url(/artwork/comfortaa/Comfortaa-Regular.ttf);
 }
 @import "styles/nordtheme.css";
 
