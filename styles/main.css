@@ -21,8 +21,7 @@
   --nord13: rgb(235,203,139);
   --nord14: rgb(163,190,140);
   --nord15: rgb(180,142,173);
-}
-
+} 
 * {
     font-family: comfortaa;
 }
@@ -32,4 +31,17 @@ h1 {
 section {
     display: inline-block;
     width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.sociallink {
+    transition: opacity 0.8s ease;
+    opacity: 1;
+}
+.sociallink:hover {
+    opacity: 0.5;
 }
