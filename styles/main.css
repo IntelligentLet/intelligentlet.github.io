@@ -41,8 +41,8 @@ body {
     height: 100%;
 }
 .sociallink {
-    transition: box-shadow 0.2s linear;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    transition: filter 0.2s linear;
+    filter: drop-shadow(none);
     display: inline-block;
     background-size: contain;
     min-height: 100%;
@@ -51,7 +51,7 @@ body {
     padding: 3px;
 }
 .sociallink:hover {
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.6);
+    filter: drop-shadow(6px 6px 8px rgba(0, 0, 0, 0.6));
 }
 .start {
     background-image: url(../artwork/rock-mountain-cliff-black-and-white-1177.jpg);
