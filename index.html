@@ -55,12 +55,17 @@
             </div>
         </div>
     </section>
-
-    
+    <section style="background-color: var(--nord2); height: 15vh;">
+        <p style="text-align: center; color: var(--nord4); font-size: 20px;">Copyleft 2020-2021</p>
+        <p style="text-align: center; color: var(--nord4); font-size: 20px;">To contact me, send a message on Discord, <strong id="logicgo2">LogicGo#7666</strong></p>
+        <p style="text-align: center; color: var(--nord4); font-size: 20px;">i use <strong id="logicgo3">arch</strong> btw</p>
+    </section>
 </body>
 <script>
     //random name color on load
     var random = Math.floor(Math.random() * 6) + 10;
     var color = `var(--nord${random})`;
     document.getElementById("logicgo").style.color = color;
+    document.getElementById("logicgo2").style.color = color;
+    document.getElementById("logicgo3").style.color = color;
 </script>
