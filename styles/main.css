@@ -1,89 +1,118 @@
 @font-face {
-    font-family: comfortaa;
-    src: url(../artwork/comfortaa/Comfortaa-Regular.ttf);
+  font-family: 'Comfortaa';
+  src: url(../artwork/comfortaa/Comfortaa-Regular.ttf);
 }
 
 :root {
-  --nord0: rgb(46,52,64);
-  --nord1: rgb(59,66,82);
-  --nord2: rgb(67,76,94);
-  --nord3: rgb(76,86,106);
-  --nord4: rgb(216,222,233);
-  --nord5: rgb(229,233,240);
-  --nord6: rgb(236,239,244);
-  --nord7: rgb(143,188,187);
-  --nord8: rgb(136,192,208);
-  --nord9: rgb(129,161,193);
-  --nord10: rgb(94,129,172);
-  --nord11: rgb(191,97,106);
-  --nord12: rgb(208,135,112);
-  --nord13: rgb(235,203,139);
-  --nord14: rgb(163,190,140);
-  --nord15: rgb(180,142,173);
-} 
-* {
-    font-family: comfortaa;
-}
-h1 {
-    font-size: 70px;
-}
-section {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    padding: 0px;
-    margin: 0px;
-}
-body {
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    height: 100%;
-}
-.sociallink {
-    transition: filter 0.2s linear;
-    filter: drop-shadow(none);
-    display: inline-block;
-    background-size: contain;
-    min-height: 100%;
-    height: 100%;
-    border-radius: 10px;
-    padding: 3px;
-}
-.sociallink:hover {
-    filter: drop-shadow(6px 6px 8px rgba(0, 0, 0, 0.6));
-}
-.start {
-    background-image: url(../artwork/rock-mountain-cliff-black-and-white-1177.jpg);
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-position: center; 
-    background-attachment: fixed;
+  --nord0: rgb(46, 52, 64);
+  --nord1: rgb(59, 66, 82);
+  --nord2: rgb(67, 76, 94);
+  --nord3: rgb(76, 86, 106);
+  --nord4: rgb(216, 222, 233);
+  --nord5: rgb(229, 233, 240);
+  --nord6: rgb(236, 239, 244);
+  --nord7: rgb(143, 188, 187);
+  --nord8: rgb(136, 192, 208);
+  --nord9: rgb(129, 161, 193);
+  --nord10: rgb(94, 129, 172);
+  --nord11: rgb(191, 97, 106);
+  --nord12: rgb(208, 135, 112);
+  --nord13: rgb(235, 203, 139);
+  --nord14: rgb(163, 190, 140);
+  --nord15: rgb(180, 142, 173);
 }
 
-.grid { 
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    grid-gap: 1%;
-    align-items: stretch;
-    margin: auto;
+* {
+  font-family: 'Comfortaa';
+}
+
+h1 {
+  font-size: 70px;
+}
+
+section {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+
+  /* do this so the background will
+    fill a margin between the bottom
+    of the page and the footer */
+  background-color: var(--nord2);
+}
+
+.sociallink {
+  transition: filter 0.2s linear;
+  filter: none;
+  display: inline-block;
+  background-size: contain;
+  min-height: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.sociallink:hover {
+  filter: drop-shadow(6px 6px 8px rgba(0, 0, 0, 0.6));
+}
+
+.start {
+  background-image: url(../artwork/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-gap: 1%;
+  align-items: stretch;
+  margin: auto;
 }
 
 .grid img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .technologies {
-    background-color: var(--nord4);
-    align-items: center; 
-    display: flex;
-    padding: 10px; 
-    border-radius: 10px; 
-    height: 100%;
-    transition: box-shadow 0.2s linear;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  background-color: var(--nord4);
+  align-items: center;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  height: 100%;
+  transition: box-shadow 0.2s linear;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .technologies:hover {
-    box-shadow: 16px 16px 8px rgba(0, 0, 0, 0.6);
+  box-shadow: 16px 16px 8px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.experience {
+  font-size: 12vw;
+  text-align: center;
+}
+
+/* essentially max font size */
+@media screen and (min-width: 700px) {
+  .experience {
+    font-size: 75px;
+  }
+}
+
+.no-text-deco {
+  text-decoration: none;
 }
