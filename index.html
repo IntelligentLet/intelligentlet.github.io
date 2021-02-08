@@ -1,71 +1,77 @@
-<!DOCTYPE html>
 <!-- hey if you read this i want you to know that this took hours to figure out -->
-<head>
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <title>Logic Go</title>
-</head>
-<body>
-    <section class="start">
-        <div style="padding: 10px; height: 90vh;">
-            <div style="padding: 10px; right: 0px; top: 0px; position: absolute; height: 50px;">
-                <a href="https://github.com/intelligentlet" target="_blank">
-                    <img class="sociallink" src="artwork/iconfinder_github-square_1608907.png">
-                </a>
-                <a href="https://discord.gg/MCzHtsS" target="_blank">
-                    <img class="sociallink" src="artwork/iconfinder_discord_4691356.png">
-                </a>
-                <a href="https://www.youtube.com/channel/UCZlKlceZE_qb7OB-buawThg" target="_blank">
-                    <img class="sociallink" src="artwork/iconfinder_Rounded_Youtube3_svg_5282548.png">
-                </a>
-            </div>
 
-            <h2>Hello, I am</h2>
-            <h1 id="logicgo">Logic Go</h1>
-            <h2>Nice to meet you! 🙂</h2>
-            <p>I work on fun programming projects, play the piano, and listen to jazz.</p>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="description" content="LogicGo's landing page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Logic Go</title>
+  </head>
+
+  <body>
+    <section class="start">
+      <div style="padding: 10px; height: 90vh;">
+        <div style="padding: 10px; right: 0px; top: 0px; position: absolute; height: 50px;">
+          <a href="https://github.com/intelligentlet" target="_blank" class="no-text-deco">
+            <img class="sociallink" src="artwork/iconfinder/iconfinder_github.png">
+          </a>
+          <a href="https://discord.gg/MCzHtsS" target="_blank" class="no-text-deco">
+            <img class="sociallink" src="artwork/iconfinder/iconfinder_discord.png">
+          </a>
+          <a href="https://www.youtube.com/channel/UCZlKlceZE_qb7OB-buawThg" target="_blank" class="no-text-deco">
+            <img class="sociallink" src="artwork/iconfinder/iconfinder_youtube.png">
+          </a>
         </div>
-        <div style="padding: 10px; height: 10vh">
+
+        <h2>Hello, I am</h2>
+        <h1 class="color-change">Logic Go</h1>
+        <h2>Nice to meet you! 🙂</h2>
+        <p>I work on fun programming projects, play the piano, and listen to jazz.</p>
+      </div>
+      <div style="padding: 10px; height: 10vh">
             <p style="text-align: center; color: var(--nord4);">Scroll Down...</p>
         </div>
     </section>
     <section style="background-color: var(--nord0); height: 100vh;">
-        <div style="padding: 10px">
-            <h1 style="color: var(--nord4);">Experience</h1>
-            <div class="grid">
-                <div class="technologies">
-                    <a href="https://github.com/intelligentlet/intelligentlet.github.io" target="_blank">
-                        <img src="/artwork/html-css-js.png">
-                    </a>
-                </div>
-                <div class="technologies">
-                    <a href="https://github.com/intelligentlet/gfgbot" target="_blank">
-                        <img src="/artwork/nodejs.png">
-                    </a>
-                </div>
-                <div class="technologies">
-                    <a href="https://github.com/intelligentlet/pyhw" target="_blank">
-                        <img src="/artwork/python.png">
-                    </a>
-                </div>
-                <div class="technologies">
-                    <a href="https://github.com/intelligentlet/shype" target="_blank">
-                        <img src="/artwork/tux.png">
-                    </a>
-                </div>
+      <div style="padding: 10px">
+        <h1 style="color: var(--nord4);" class="experience">Experience</h1>
+        <div class="grid">
+          <a href="https://github.com/intelligentlet/intelligentlet.github.io">
+            <div class="technologies">
+                <img src="artwork/experience/html-css-js.png" />
             </div>
+          </a>
+
+          <a href="https://github.com/intelligentlet/gfgbot">
+            <div class="technologies">
+              <img src="artwork/experience/nodejs.png" />
+            </div>
+          </a>
+
+          <a href="https://github.com/intelligentlet/pyhw">
+            <div class="technologies">
+              <img src="artwork/experience/python.png" />
+            </div>
+          </a>
+
+          <a href="https://github.com/intelligentlet/shype">
+            <div class="technologies">
+              <img src="artwork/experience/tux.png" />
+            </div>
+          </a>
         </div>
+      </div>
     </section>
     <section style="background-color: var(--nord2); height: 15vh;">
-        <p style="text-align: center; color: var(--nord4); font-size: 20px;">Copyleft 2020-2021</p>
-        <p style="text-align: center; color: var(--nord4); font-size: 20px;">To contact me, send a message on Discord, <strong id="logicgo2">LogicGo#7666</strong></p>
-        <p style="text-align: center; color: var(--nord4); font-size: 20px;">i use <strong id="logicgo3">arch</strong> btw</p>
+      <p style="text-align: center; color: var(--nord4); font-size: 20px;">Copyleft 2020-2021</p>
+      <p style="text-align: center; color: var(--nord4); font-size: 20px;">To contact me, send a message on Discord, <strong class="color-change">LogicGo#7666</strong></p>
+      <p style="text-align: center; color: var(--nord4); font-size: 20px;">i use <strong class="color-change">arch</strong> btw</p>
     </section>
-</body>
-<script>
-    //random name color on load
-    var random = Math.floor(Math.random() * 6) + 10;
-    var color = `var(--nord${random})`;
-    document.getElementById("logicgo").style.color = color;
-    document.getElementById("logicgo2").style.color = color;
-    document.getElementById("logicgo3").style.color = color;
-</script>
+  </body>
+  <script src="scripts/main.js"></script>
+</html>
