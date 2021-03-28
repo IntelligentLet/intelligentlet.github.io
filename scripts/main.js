@@ -1,10 +1,12 @@
 
 function setRandomColors() {
 
-  let color = Math.floor(Math.random() * 6) + 10;
+  let colors = ['rgb(191, 97, 106)', 'rgb(208, 135, 112)', 'rgb(235, 203, 139)', 'rgb(163, 190, 140)', 'rgb(180, 142, 173)']
+
+  let color = colors[Math.floor(Math.random() * colors.length)]
 
   document.querySelectorAll('.color-change').forEach((element, i) => {
-    element.style.color = `var(--nord${color})`;
+    element.style.color = color;
   });
 
 }
