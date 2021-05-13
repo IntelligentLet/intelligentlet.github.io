@@ -1,115 +1,78 @@
 @font-face {
-  font-family: 'Comfortaa';
-  src: url(../artwork/comfortaa/Comfortaa-Regular.ttf);
+	font-family: 'Title';
+	src: url(../artwork/font/Raleway-Bold.ttf);
 }
-
+@font-face {
+	font-family: 'Section';
+	src: url(../artwork/font/Raleway-SemiBold.ttf);
+}
+@font-face {
+	font-family: 'Regular';
+	src: url(../artwork/font/Raleway-Regular.ttf);
+}
 :root {
-  --grey: #1d2021;
-  --pink: #ff96c0;
-  --black: #16161e;
-  --blue: #414182;
-  --white: #edd7ef;
-}
-
-* {
-  font-family: 'Comfortaa';
+	--color1: #604D44;
+	--color2: #ECB98B;
+	--color3: #EF923F;
+	--color4: #E44F27;
+	--color5: #736A61;
+	--background: #2b2b2b;
 }
 
 h1 {
-  font-size: 70px;
+	font-family: 'Title';
+	font-size: 500%;
+	text-align: center;
+	color: var(--color4);
 }
 
 h2 {
-  color: var(--grey);
+	font-family: 'Section';
+	color: var(--color3);
+	padding-left: 5%;
 }
 
 p {
-  color: var(--black);
+	font-family: 'Regular';
+	color: var(--color2);
+	padding-left: 10%;
 }
 
-section {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  padding: 0px;
-  margin: 0px;
+.socials {
+	display: block;
+	text-align: center;
+	padding: 0;
+}
+
+.social {
+	display: inline-block;
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+
+	transition: .25s ease-in-out;
+	-moz-transition: .25s ease-in-out;
+	-webkit-transition: .25s ease-in-out;
+}
+
+.social:hover {
+	opacity: 40%;
+	transform: translateY(-5%);
+}
+
+.icon {
+	stroke: var(--color4);
+}
+
+.grid-container {
+	display: grid;
+	
 }
 
 body {
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  height: 100%;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
 
-  /* do this so the background will
-    fill a margin between the bottom
-    of the page and the footer */
-  background-color: var(--nord2);
-}
-
-.sociallink {
-  transition: filter 0.2s linear;
-  filter: none;
-  display: inline-block;
-  background-size: contain;
-  min-height: 100%;
-  height: 100%;
-  border-radius: 10px;
-  padding: 3px;
-}
-
-.sociallink:hover {
-  filter: drop-shadow(6px 6px 8px rgba(0, 0, 0, 0.6));
-}
-
-.start {
-  background-image: url(../artwork/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20%;
-  grid-gap: 1%;
-  align-items: stretch;
-  margin: auto;
-}
-
-.grid img {
-  max-width: 100%;
-}
-
-.technologies {
-  background-color: var(--grey);
-  align-items: center;
-  display: flex;
-  padding: 10px;
-  border-radius: 10px;
-  height: 100%;
-  transition: box-shadow 0.2s linear;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
-}
-
-.technologies:hover {
-  box-shadow: 16px 16px 8px rgba(0, 0, 0, 0.6);
-  cursor: pointer;
-}
-
-.experience {
-  font-size: 12vw;
-  text-align: center;
-}
-
-/* essentially max font size */
-@media screen and (min-width: 700px) {
-  .experience {
-    font-size: 75px;
-  }
-}
-
-.no-text-deco {
-  text-decoration: none;
+	background-color: var(--background);
 }
