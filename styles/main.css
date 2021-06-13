@@ -32,40 +32,16 @@ h2 {
 	padding-left: 5%;
 }
 
+h3 {
+	font-family: 'Section';
+	color: var(--color3);
+	padding-left: 5% 
+}
+
 p {
 	font-family: 'Regular';
 	color: var(--color2);
 	padding-left: 10%;
-}
-
-.socials {
-	display: block;
-	text-align: center;
-	padding: 0;
-}
-
-.social {
-	display: inline-block;
-	padding-left: 0.5%;
-	padding-right: 0.5%;
-
-	transition: .25s ease-in-out;
-	-moz-transition: .25s ease-in-out;
-	-webkit-transition: .25s ease-in-out;
-}
-
-.social:hover {
-	opacity: 40%;
-	transform: translateY(-5%);
-}
-
-.icon {
-	stroke: var(--color4);
-}
-
-.grid-container {
-	display: grid;
-	
 }
 
 body {

@@ -1,0 +1,28 @@
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-gap: 1rem;
+}
+     
+.card {
+    background-color: var(--color1);
+    border-radius: .5rem;
+    display: inline-block;
+    grid-row-start: 1;
+    grid-row-end: auto;
+
+    transition: .25s ease-in-out;
+	-moz-transition: .25s ease-in-out;
+	-webkit-transition: .25s ease-in-out;
+}    
+
+.card:hover {
+	transform: translateY(-1%);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: .5rem;
+}
