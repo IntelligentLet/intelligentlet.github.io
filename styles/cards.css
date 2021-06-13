@@ -10,8 +10,6 @@
     background-color: var(--color1);
     border-radius: .5rem;
     display: inline-block;
-    grid-row-start: 1;
-    grid-row-end: auto;
 
     transition: .25s ease-in-out;
 	-moz-transition: .25s ease-in-out;
@@ -25,4 +23,10 @@
 .card img {
     max-width: 100%;
     border-radius: .5rem;
+}
+
+@media screen and (max-width: 800px) {
+    .cards-container {
+        grid-template-columns: 100%;
+    }
 }
